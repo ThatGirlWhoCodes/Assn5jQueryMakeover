@@ -1,18 +1,39 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+
 /* Basic CSS resets -- leveling slight inconsistencies in browsers */
 html, body {
 	margin:0px;
 	padding:0px;
 	height:100%;
+    color: #929191;
 }
 
 html {
 		/* Standard text-settings below */
-	font-size: 1em;
     line-height: 1.4em;
 }
-
-
-
+.logo{
+    font-size: .5rem;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#logo{
+    padding: 100px;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+main img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
@@ -20,18 +41,58 @@ body {
 	
 	
 }
+header{
+  /*  box model properties  */
+  font-size: 1.25rem;
 
+  /* position properties */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  /* flex properties */
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+header a {
+  color: #eee;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #ec0000;
+}
+.logo {
+  font-size: 1.5rem;
+}
+
+header, footer{
+    background-color: #2d2dfd;
+    color: #eee;
+    padding: 1.25em;
+}
 
 #container {
 	
 }
+main{
 
-
-
-
-
-
-
+    padding: 1em;
+}
+hr{
+    padding-top: 1rem;
+}
+a {
+    color: #FFFFFF;
+  }
+  
+  a:hover {
+    color: #ce2f2f;
+  }
 /* Class for making YouTube/Vimeo videos responsive */
 
 figure.responsive {
