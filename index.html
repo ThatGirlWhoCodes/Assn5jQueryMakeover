@@ -16,9 +16,8 @@
 
 
 <body>
-
   <div id="container">
-
+    this is the entire containter for the code
     <header>
       <div class="logo">
         <a href="#">Byte-Bye Bully&#39;s Coalition</a>
@@ -39,12 +38,13 @@
     </main>
 
     <footer>
-      <button></button>
+      <button class="page-changing-button">
+        <img src="#" alt="make icon for personality change">
+      </button>
       <p>&#169; Gianna G. Dimperio</p>
     </footer>
 
-  </div><!-- close "container" -->
-  
+  </div><!-- close id "container" -->
   <!-- Link to jQuery on Google CDN-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   
@@ -52,11 +52,27 @@
   <!-- Write your jQuery code inside of the .ready() function below -->
   <script>
 $(document).ready(function() {
+  function changePersonality() {
+    const container =('#container');
+    if (container.style.backgroundColor === 'blue') {
+      container.css({
+        'background-color': 'lightcoral',
+        'color': 'black',
+        'font-family': 'Verdana, sans-serif'
+      });
+    } else {
+      container.css({
+        'background-color': 'lightblue',
+        'color': 'white',
+        'font-family': 'Arial, sans-serif'
+      });
+    }
+  }
 
-
-
-
-}); //close .ready()
+  // Call the function when the button is clicked
+  $('#change-personality-button').click(changePersonality);
+});
+//close .ready()
 </script>
 
 </body>
