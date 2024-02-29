@@ -17,7 +17,6 @@
 
 <body>
   <div id="container">
-    this is the entire containter for the code
     <header>
       <div class="logo">
         <a href="#">Byte-Bye Bully&#39;s Coalition</a>
@@ -42,6 +41,7 @@
         <img src="#" alt="make icon for personality change">
       </button>
       <p>&#169; Gianna G. Dimperio</p>
+      
     </footer>
 
   </div><!-- close id "container" -->
@@ -51,8 +51,12 @@
   <script>
 $(document).ready(function() {
   $('.page-changing-button').click(function(){
-    $('header, footer').css('background-color', 'purple');
+    $('header, footer, .logo').css({
+    'background': 'linear-gradient(to bottom right, #FF909D, #0E1244)',
+    'font-family': 'Courier New',
   });
+  });
+
 });//close .ready()
 </script>
 

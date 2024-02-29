@@ -37,10 +37,10 @@ main img{
 
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
-body {
+/* body {
 	
 	
-}
+} */
 header{
   /*  box model properties  */
   font-size: 1.25rem;
@@ -76,11 +76,10 @@ header, footer{
     padding: 1.25em;
 }
 
-#container {
+/* #container {
 	
-}
+} */
 main{
-
     padding: 1em;
 }
 hr{
