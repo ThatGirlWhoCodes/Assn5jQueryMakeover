@@ -47,32 +47,13 @@
   </div><!-- close id "container" -->
   <!-- Link to jQuery on Google CDN-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-  
-  
   <!-- Write your jQuery code inside of the .ready() function below -->
   <script>
 $(document).ready(function() {
-  function changePersonality() {
-    const container =('#container');
-    if (container.style.backgroundColor === 'blue') {
-      container.css({
-        'background-color': 'lightcoral',
-        'color': 'black',
-        'font-family': 'Verdana, sans-serif'
-      });
-    } else {
-      container.css({
-        'background-color': 'lightblue',
-        'color': 'white',
-        'font-family': 'Arial, sans-serif'
-      });
-    }
-  }
-
-  // Call the function when the button is clicked
-  $('#change-personality-button').click(changePersonality);
-});
-//close .ready()
+  $('.page-changing-button').click(function(){
+    $('header, footer').css('background-color', 'purple');
+  });
+});//close .ready()
 </script>
 
 </body>
