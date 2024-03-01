@@ -34,6 +34,10 @@ main img{
     margin-right: auto;
     width: 50%;
 }
+footer img{
+  max-width: 10%;
+  width:50%;
+}
 
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
@@ -75,6 +79,11 @@ header, footer{
     color: #eee;
     padding: 1.25em;
 }
+button{
+  width: 20%;
+  color: blue;
+}
+
 
 /* #container {
 	
@@ -82,9 +91,7 @@ header, footer{
 main{
     padding: 1em;
 }
-hr{
-    padding-top: 1rem;
-}
+
 a {
     color: #FFFFFF;
   }
