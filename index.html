@@ -31,9 +31,9 @@
     <main>
       <img id="logo" src="/img/logo.PNG" alt="faux logo by me">
       <hr>
-        <p>Help us stand up against bullying today!</p>
-        <p>Cyberbullying is a serious issue that affects many individuals, especially young people, in today's digital age. It can have devastating consequences on mental health and well-being. By raising awareness and promoting kindness and empathy online, we can work together to combat cyberbullying and create a safer and more inclusive online community.</p>
-        <img src="img/stopCBgraphic.PNG" alt="">
+        <p id="p1">Help us stand up against bullying today!</p>
+        <p id="p2">Cyberbullying is a serious issue that affects many individuals, especially young people, in today's digital age. It can have devastating consequences on mental health and well-being. By raising awareness and promoting kindness and empathy online, we can work together to combat cyberbullying and create a safer and more inclusive online community.</p>
+        <img src="img/stopCBgraphic.PNG" alt="stop bullying graphic by me">
     </main>
 
     <footer>
@@ -52,12 +52,23 @@
 $(document).ready(function() {
   $('.page-changing-button').click(function(){
     $('header, footer, .logo').css({
-    'background': 'linear-gradient(to bottom right, #FF909D, #0E1244)',
+    'background': 'linear-gradient(to bottom right, #FFEA00, #454B1B)',
     'font-family': 'Courier New',
   });
+  }) //end of header footer content
+  $('.page-changing-button').click(function(){
+    $('body').css({
+    'background': 'linear-gradient(to bottom right, #FFEA00, #454B1B)',
+    'font-family': 'Courier New',
+    'color': 'white',
   });
-
-});//close .ready()
+  }) //end of body content
+  $('.page-changing-button').click(function(){
+    $('#p1').text("Yo, let's all come together and squash bullying right now!");
+    $('#p2').text("Hey folks, cyberbullying? Yeah, it's no joke, especially for us youngsters in this digital era. It messes with your head big time. But hey, if we spread some love and understanding online, we can totally shut down this cyberbullying nonsense and make the internet a chill and welcoming place for everyone.");
+  });
+  //end of p content
+  });
 </script>
 
 </body>
